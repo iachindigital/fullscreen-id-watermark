@@ -1,135 +1,27 @@
-<img alt="image" src="https://github.com/user-attachments/assets/2e7d55a4-c6fe-4328-9c9f-55781d3a3f57" />
+# 证件全屏水印助手 (Fullscreen ID Watermark)
 
-<br>
-<br>
+一个纯前端、零服务器上传的本地证件全屏水印添加工具。专门用于保护个人身份证、护照、营业执照等敏感证件图片，防止被他人盗用或冒用。
 
-<p align="center">
-  <strong>
-    <a href="#-证件全屏水印助手-v4">简体中文</a> ｜ 
-    <a href="#-id-fullscreen-watermark-tool-v4">English</a>
-  </strong>
-</p>
+🚀 **在线使用地址**：[https://iachindigital.github.io/fullscreen-id-watermark/](https://iachindigital.github.io/fullscreen-id-watermark/)
+
+*(本工具基于原作者 [isharmla233/fullscreen-id-watermark](https://github.com/isharmla233/fullscreen-id-watermark) 的开源项目进行部署与维护)*
 
 ---
 
-# 🪪 证件全屏水印助手 V4
+## ✨ 核心特性
 
-## 📦 使用
+- 🔒 **绝对隐私安全**：100% 纯前端浏览器本地处理，无任何后端服务器，不消耗任何网络流量。
+- ✈️ **支持完全断网使用**：您可以将本项目下载到本地，在完全断网（飞行模式）的环境下双击打开 `index.html` 运行，证件隐私绝不外泄。
+- 🎨 **高度自定义调节**：支持实时调节水印文本、颜色、不透明度、字号、旋转角度、横纵间距以及交错排布。
+- ⚡ **智能动态字号**：字号设为 `0` 或 `自动` 时，工具会自动根据输入的图片尺寸计算最佳视觉大小，无需手动调整。
+- 🕒 **动态变量支持**：支持 `{date}`（当前日期）、`{time}`（当前时间）、`{filename}`（原文件名）等占位符，自动生成精确到秒的安全保护语。
+- 📦 **批量高效处理**：支持多张图片同时拖拽或选择导入，提供 Notion 风格的流畅预览，支持一键批量处理并打包下载。
 
-👉 在线体验：  
-https://tools.baiyuyu.com/watermark/
+## 🛠️ 快速开始与本地开发
 
-## 🚀 介绍
+本项目为单文件架构，无任何复杂的打包构建流程，开箱即用。
 
-一个基于**纯静态 HTML** 的轻量级工具，用于为证件、身份证等图片添加 **全屏水印覆盖保护**。
-
-- 所有处理均在浏览器本地完成  
-- 无需上传到服务器  
-- 支持离线使用  
-- 适合证件、敏感截图防滥用场景
-
-## ✨ 特性
-
-- **全屏水印覆盖**  
-  自动平铺水印文字，覆盖图片整个区域，增强防截图、转发的心理阻吓效果。
-
-- **本地处理 · 隐私安全**  
-  所有水印生成操作均在浏览器端完成，不上传图片、不经过服务器。
-
-- **变量文本支持**  
-  内置变量：
-  - `{date}` 当前日期  
-  - `{time}` 当前时间  
-  - `{filename}` 原始文件名  
-
-- **实时预览与可视化调整**  
-  支持实时调整：
-  - 颜色  
-  - 不透明度  
-  - 字号  
-  - 旋转角度  
-  - 横向 / 纵向间距  
-
-- **高级布局配置**  
-  - 字体选择  
-  - 交错水印排布  
-  - 更自然的全屏覆盖效果  
-
-- **拖拽上传 & 批量处理**  
-  - 支持拖拽图片  
-  - 支持一次性处理多张图片  
-
-## ⚖ 许可
-
-本项目基于 **GNU General Public License v3.0（GPL-3.0）** 开源。
-
-你可以：
-- 自由使用
-- 修改
-- 分发
-- 用于商业用途  
-
-但基于本项目代码的衍生作品 **必须同样以 GPL-3.0 协议开源**。
-
----
-
-# 🪪 ID Fullscreen Watermark Tool V4
-
-## 📦 Usage
-
-👉 Online Demo:  
-https://tools.baiyuyu.com/watermark/
-
-## 🚀 Introduction
-
-A **lightweight, pure static HTML tool** for adding **fullscreen tiled watermarks** to ID cards and sensitive images.
-
-- Runs entirely in the browser  
-- No image uploads  
-- No server dependency  
-- Works offline  
-
-Designed to reduce unauthorized sharing and screenshot abuse.
-
-## ✨ Features
-
-- **Fullscreen Watermark Overlay**  
-  Automatically tiles watermark text across the entire image area.
-
-- **Local Processing & Privacy Friendly**  
-  All operations are performed locally in your browser.  
-  Images are never uploaded.
-
-- **Dynamic Variables**  
-  Built-in variables:
-  - `{date}` Current date  
-  - `{time}` Current time  
-  - `{filename}` Original file name  
-
-- **Live Preview & Adjustment**  
-  Real-time control over:
-  - Color  
-  - Opacity  
-  - Font size  
-  - Rotation angle  
-  - Horizontal & vertical spacing  
-
-- **Advanced Layout Options**  
-  - Font selection  
-  - Staggered watermark layout  
-
-- **Drag & Drop / Batch Processing**  
-  - Drag images directly into the page  
-  - Process multiple images at once  
-
-## ⚖ License
-
-This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
-
-You are free to:
-- Use
-- Modify
-- Distribute
-- Use commercially  
-
-Any derivative work **must also be released under GPL-3.0**.
+### 1. 克隆本项目到本地
+```bash
+git clone [https://github.com/iachindigital/fullscreen-id-watermark.git](https://github.com/iachindigital/fullscreen-id-watermark.git)
+cd fullscreen-id-watermark
